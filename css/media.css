@@ -1,0 +1,268 @@
+
+    @media screen and (max-width: 520px) {
+         .container { 
+            display: grid;
+            grid-template-areas:"mobile"
+                                "mobile"
+                                "labs"
+                                "labs"
+                                "keyboard"
+                                "keyboard"
+                                "mac" 
+                                "mac"
+                                "icloud"
+                                "icloud" 
+                                "icloud"
+                                "icloud"
+                                "games"
+                                "games"
+                                "games"
+                                "brand"
+                                "brand"
+                                "twitter"
+                                "twitter"
+                                "twitter"
+                                "experience"
+                                "experience"
+                                "tv";
+
+          
+            /* .mobile{
+                grid-area: auto;
+            }             
+                                */
+
+            /* grid-template-columns: repeat(auto-fill,minmax(600px,1fr));   
+            grid-template-rows: repeat(16,1fr);                  */
+  
+           
+          
+        .mobile{
+                display: flex;
+                flex-direction: column ;
+                grid-area: mobile;
+                
+                .text{
+                    width: 90%;
+                    padding-top: 15px;
+                    margin-bottom: 10px;
+                }
+
+                .image {
+                    overflow: hidden;
+                }
+            }
+
+           
+
+        .labs{
+               grid-area: labs;
+                order: -1;
+            } 
+            
+        .mac{
+                grid-area: mac;
+                display: flex;
+                flex-direction: column;
+                
+                .description{
+                    display: flex;
+                    justify-content: left;
+                   
+                    flex-direction: column;
+                }
+
+          
+               .text{
+                width: 80%;
+                
+               }
+        }
+        .icloud{
+            padding-top: 15px;
+            padding-bottom: 15px;
+            grid-area: icloud;
+        }
+
+        .brand{
+           
+          grid-area: brand;
+            img{
+               width: 90%;
+               margin-left: auto;
+               margin-right: auto;
+               position: relative;
+            }
+        } 
+
+        .twitter{
+            grid-area: twitter;
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            visibility: visible;
+            
+        
+             .content{
+                  display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+               width: 200px;
+               height: 200px;
+               padding: 20px;
+               border-radius: 50%;
+               background-color: rgb(75, 225, 225) ;
+               color: white;
+              
+               
+               h2{
+                width: 70%;
+                text-align: center;
+               }
+        
+               i{
+                color: white;
+               
+               }
+        }
+        } 
+        .experience{
+        grid-area: experience;
+        height: 200px;
+      }
+      .tv{
+        grid-area: tv;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+     
+        /* overflow: hidden; */
+       
+
+      }
+    } 
+    }
+    @media screen and (min-width: 520px) and (max-width:980px){
+        .container{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(15,200px);
+            .mobile{
+                grid-area: 1/1/3/3;
+            }
+            .labs{
+                grid-area: 3/1/5/3;
+            }
+            .keyboard{
+                grid-area: 5/1/7/2;
+            }
+            .games{
+                grid-area: 5/2/7/3;
+            }
+            .mac{
+                grid-area: 7/1/9/3;
+            }
+            .twitter{
+                grid-area: 9/1/11/2;
+            }
+            .icloud{
+                grid-area: 9/2/13/3;
+            }
+            .brand{
+                grid-area: 11/1/13/2;
+            }
+            .experience{
+                grid-area: 13/1/14/3;
+            }
+            .tv{
+                grid-area: 13/1/15/3;
+            }
+        }
+    }
+     /* @media screen (min-width: 520px) and (max-width:980px){
+        .container { 
+                display: grid;
+                grid-template-areas: "labs  labs"
+                                     "labs  labs"
+                                     "mobile mobile"
+                                     "mobile mobile"
+                                     "keyboard games"
+                                     "keyboard games"
+                                     "mac mac"
+                                     "mac mac"
+                                     "twitter icloud"
+                                     "twittwr icloud"
+                                     "brand icloud"
+                                     "brand icloud"
+                                     "experience experience"
+                                     "tv tv"
+                                     "tv tv";
+                                         .mobile{
+                                            grid-area: mobile;
+                                         }
+
+                                         .mac{
+                                            grid-area: mac;
+                                         }
+
+                                         .labs{
+                                            grid-area: labs;
+                                         }
+
+                                         .keyboard{
+                                            grid-area: keyboard;
+                                         }
+
+                                         .games{
+                                            grid-area: games;
+                                         }
+                                         
+                                         .twitter{
+                                            grid-area: twitter;
+                                         }
+
+                                         .icloud{
+                                            grid-area: icloud;
+                                         }
+
+                                         .experience{
+                                            grid-area: experience;
+                                         }
+
+                                         .tv{
+                                            grid-area: tv;
+                                         }
+
+                                         .brand{
+                                            grid-area: brand;
+                                            .img{
+                                                
+                                                    width: 90%;
+                                                    margin-right: auto;
+                                                   
+                                                
+                                            }
+                                        }
+              } 
+      }  */
+
+    
+
+    @media screen and (min-width: 980px) {
+        .container{
+            display: grid;
+            grid-template-areas:    " mobile    mobile      labs   labs"
+                                    " mobile    mobile      labs   labs"
+                                    " keyboard  mac         mac    icloud"
+                                    " keyboard  mac         mac    icloud"
+                                    " games     brand       brand  icloud"
+                                    " games     brand       brand  icloud"
+                                    "twitter    experience  tv     tv";
+
+            .twitter{
+                overflow: hidden;
+            }
+}
+    }
